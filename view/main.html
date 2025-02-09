@@ -1,14 +1,1 @@
-<h1>Admin Dashboard</h1>
-
-<maya-button store="adminPage" operationId="fetchUsers">Load Users</maya-button>
-
-<maya-list view="user-list" store="adminPage" operationId="selectUser">
-    <!-- Users will be dynamically populated here -->
-</maya-list>
-
-<maya-button store="adminPage" operationId="addUser">Add User</maya-button>
-
-<style>
-  h1 { text-align: center; }
-  maya-button { display: block; margin: 10px auto; }
-</style>
+<h1>{{msg}}</h1>
