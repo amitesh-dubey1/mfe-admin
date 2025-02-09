@@ -1,9 +1,14 @@
-<h1>{{maya.title}}</h1>
+<h1>Admin Dashboard</h1>
 
-<maya-panel store="adminui">
-    <maya-list view="list-view" store="adminui" operationId="fetchUsers">
-        <!-- Users will be dynamically loaded here -->
-    </maya-list>
-</maya-panel>
+<maya-button store="adminPage" operationId="fetchUsers">Load Users</maya-button>
 
-<maya-button store="adminui" operationId="addUser">Add User</maya-button>
+<maya-list view="user-list" store="adminPage" operationId="selectUser">
+    <!-- Users will be dynamically populated here -->
+</maya-list>
+
+<maya-button store="adminPage" operationId="addUser">Add User</maya-button>
+
+<style>
+  h1 { text-align: center; }
+  maya-button { display: block; margin: 10px auto; }
+</style>
